@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Hero Section (Split Layout) -->
+<div class="hero-home">
+  <div class="container">
+      <div class="row align-items-center">
+          <!-- Left: Text Content -->
+          <div class="col-md-6 text-left hero-text">
+              <h1 class="display-6"> Welcome to Malware Detection System</h1>
+              <p class="lead">Detect malicious URLs, EXE files, and QR codes instantly with AI-powered security.</p>
+              <a href="/try-now" class="btn btn-primary btn-lg mt-3">
+                  <i class="fas fa-search"></i> Try Now
+              </a>
+          </div>
+          <!-- Right: Image -->
+          <div class="col-md-6">
+              <img src="{{ url_for('static', filename='images/home.jpg') }}" alt="Malware Detection" class="hero-image">
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Features Section -->
+<section class="features py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Why Choose Our Malware Detection?</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt feature-icon"></i>
+                    <h4>Advanced Threat Detection</h4>
+                    <p>AI-powered detection for phishing, malware, and malicious EXE files.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-clock feature-icon"></i>
+                    <h4>Real-Time Scanning</h4>
+                    <p>Get instant results with our real-time scanning engine.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-lock feature-icon"></i>
+                    <h4>100% Secure</h4>
+                    <p>Your data is encrypted and analyzed securely.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

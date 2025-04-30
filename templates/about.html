@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<!-- Hero Section -->
+<div class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content text-center">
+        <h1 class="display-4">About Us</h1>
+        <p class="lead">Your trusted AI-powered security solution for real-time malware scanning.</p>
+    </div>
+</div>
+
+<!-- About Section -->
+<section class="about-section bg-white py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Who We Are</h2>
+        <p class="text-center">
+            We specialize in AI-powered malware detection for websites and executable files, 
+            ensuring real-time threat prevention for businesses and individuals. Our technology 
+            is designed to detect, analyze, and eliminate cyber threats before they cause harm.
+        </p>
+    </div>
+</section>
+
+<!-- Our Mission & Vision -->
+<section class="mission-vision py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Mission & Vision</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mission-box">
+                    <h3>🚀 Our Mission</h3>
+                    <p>To provide an efficient and reliable malware detection system that protects users from online threats using cutting-edge artificial intelligence. 
+                        We aim to offer fast, secure, and user-friendly security solutions for individuals and businesses worldwide.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="vision-box">
+                    <h3>🌍 Our Vision</h3>
+                    <p>To create a safer digital world where cyber threats are identified and neutralized before they cause harm. 
+                        We strive to be the global leader in AI-powered cybersecurity, making the internet a more secure place for everyone.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="why-choose-us py-5 bg-white">
+    <div class="container ">
+        <h2 class="text-center mb-4">Why Choose Us?</h2>
+        <div class="row ">
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li>✅ Real-time scanning** with AI-powered threat detection.</li>
+                    <li>✅ Accurate detection** of malware, phishing sites, and infected EXE files.</li>
+                    <li>✅ Fast and secure** scanning without logging sensitive data.</li>
+                    <li>✅ User-friendly interface** for easy malware detection.</li>
+                </ul>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Malware Detection System" class="about-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

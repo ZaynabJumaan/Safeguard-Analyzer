@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Hero Section -->
+<div class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content text-center">
+        <h1 class="display-4">How It Works</h1>
+        <p class="lead">Discover how we analyze EXE files, URLs, and QR codes to detect malware threats.</p>
+    </div>
+</div>
+
+<section class="how-it-works py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Step-by-Step Detection Process</h2>
+
+        <div class="step-box row align-items-center">
+            <div class="col-md-8">
+                <h3>1. Upload EXE, Enter URL, or Scan QR Code</h3>
+                <p>The user begins by uploading an executable (.exe) file, submitting a website URL, or scanning a QR code to initiate a malware scan.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="{{ url_for('static', filename='images/upload.jpg') }}" alt="User Input" class="step-image">
+            </div>
+        </div>
+
+        <div class="step-box row align-items-center">
+            <div class="col-md-8 order-md-2">
+                <h3>2. Intelligent Data Extraction</h3>
+                <p>The system extracts metadata and behavior signatures from the input, such as file entropy, domain age, SSL details, or QR-encoded content.</p>
+            </div>
+            <div class="col-md-4 text-center order-md-1">
+                <img src="{{ url_for('static', filename='images/extract.webp') }}" alt="Data Extraction" class="step-image">
+            </div>
+        </div>
+
+        <div class="step-box row align-items-center">
+            <div class="col-md-8">
+                <h3>3. AI Malware Detection</h3>
+                <p>Advanced machine learning models evaluate the input using patterns from known malware datasets to identify any suspicious or malicious behavior.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="{{ url_for('static', filename='images/ai.webp') }}" alt="AI Detection" class="step-image">
+            </div>
+        </div>
+
+        <div class="step-box row align-items-center">
+            <div class="col-md-8 order-md-2">
+                <h3>4. Threat Intelligence Checks</h3>
+                <p>The input is verified against real-time blacklists, global threat databases, and historical attack patterns to ensure detection accuracy.</p>
+            </div>
+            <div class="col-md-4 text-center order-md-1">
+                <img src="{{ url_for('static', filename='images/check.png') }}" alt="Threat Check" class="step-image">
+            </div>
+        </div>
+
+        <div class="step-box row align-items-center">
+            <div class="col-md-8">
+                <h3>5. Get the Result Instantly</h3>
+                <p>The system displays whether the file, URL, or QR data is Safe ✅, Suspicious ⚠️, or Malicious ❌ — along with a confidence score and reasoning.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="{{ url_for('static', filename='images/result.jpg') }}" alt="Result" class="step-image">
+            </div>
+        </div>
+
+        <div class="step-box row align-items-center">
+            <div class="col-md-8 order-md-2">
+                <h3>6. Transparent Report</h3>
+                <p>Users receive a detailed report explaining threat factors, detection evidence, and recommended actions to secure their system.</p>
+            </div>
+            <div class="col-md-4 text-center order-md-1">
+                <img src="{{ url_for('static', filename='images/report.png') }}" alt="Report" class="step-image">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}
